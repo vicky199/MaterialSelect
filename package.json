@@ -1,0 +1,40 @@
+{
+  "name": "materialselect",
+  "version": "1.0.0",
+  "description": "This Package is for SelectBox component for React native with icon ,search.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "react native",
+    "mobile",
+    "ios",
+    "android",
+    "ui",
+    "Select",
+    "Search",
+    "Select with autocomplete",
+    "Select with search"
+  ],
+  "author": "Vikas Bind",
+  "license": "ISC",
+  "dependencies": {
+    "react-native-easy-grid": "^0.2.2",
+    "react-native-elements": "^1.2.3",
+    "react-native-responsive-screen": "^1.4.0",
+    "react-native-popup-dialog": "^0.18.3",
+    "react-native-paper": "^3.6.0"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-native": "^0.59.0"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.59.0"
+  }
+}

@@ -1,0 +1,1 @@
+export {default as MaterialSelect} from './src/materialSelect';
