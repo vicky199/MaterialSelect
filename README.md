@@ -33,7 +33,10 @@ import {
   Text,
   View
 } from 'react-native';
-
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp
+} from 'react-native-responsive-screen';
 import {MaterialSelect} from 'materialselect'
 
 export default class App extends React.Component {
