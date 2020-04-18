@@ -1,6 +1,6 @@
 {
   "name": "materialselect",
-  "version": "1.0.0",
+  "version": "1.0.001",
   "description": "This Package is for SelectBox component for React native with icon ,search.",
   "main": "index.js",
   "scripts": {
