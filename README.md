@@ -4,7 +4,11 @@ This Component is created for Select Box with autocomplete in React native for a
 * This component has autocomplete with search Box.
 ## Requirement
  * You need to have already installed and configured react-native-vector-icon.
- 
+## Demo ScreenShots
+ScreenShot One             |  ScreenShot Two   |ScreenShot Three
+:-------------------------:|:-------------------------:|:-------------------------:
+![](assets/1.jpg) [app.js](app.js)| ![](assets/2.jpg) [app.js](app.js)|![](assets/3.jpg) [app.js](app.js)
+
 ## Installation
 
 If using yarn:
