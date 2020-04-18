@@ -2,7 +2,9 @@
 This Component is created for Select Box with autocomplete in React native for android and IOS.
 * You can Add Icon to your SelectBox. 
 * This component has autocomplete with search Box.
-
+## Requirement
+ * You need to have already installed and configured react-native-vector-icon.
+ 
 ## Installation
 
 If using yarn:
@@ -37,61 +39,62 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from 'react-native-responsive-screen';
-import {MaterialSelect} from 'materialselect'
+import { MaterialSelect } from 'materialselect'
 
 export default class App extends React.Component {
-constructor(props) {
+  constructor(props) {
     super(props);
-    this.state={
-    id:0
+    this.state = {
+      id: 0
     }
-    }
-onPersonSelect=(data)=>{
-this.setState({id:data.id})
-}
-render() {
-   return (
-   <View style={styles.Container}><Text>MaterialSelect Demo</Text> 
-    <MaterialSelect
-                ContainerStyle={styles.SelectBox}
-                iconSize={30}
-                iconName="product-hunt"
-                iconType="font-awesome"
-                selectedValue={this.state.id}
-                selectDisplayText="Select"
-                selectDisplayTextFontSize={16}
-                iconColor={'#72bcd4'}
-                noDataText="No data found"
-                data={[
-                  {id:1,name:'John'},
-                  {id:2,name:'Jack'}
-                ]}
-                onSelect={data => {
-                  this.onPersonSelect(data);
-                }}
-              />
-    </View>
-   )
-}
+  }
+  onPersonSelect = (data) => {
+    this.setState({ id: data.id })
+  }
+  render() {
+    return (
+      <View><Text style={{marginLeft:'10%',fontSize:18,fontWeight:'bold',marginTop:'10%'}}>MaterialSelect Demo</Text>
+        <MaterialSelect
+          ContainerStyle={styles.SelectBox}
+          iconSize={30}
+          iconName="product-hunt"
+          iconType="font-awesome"
+          selectedValue={this.state.id}
+          selectDisplayText="Select"
+          selectDisplayTextFontSize={16}
+          iconColor={'#72bcd4'}
+          noDataText="No data found"
+          data={[
+            { id: 1, name: 'John' },
+            { id: 2, name: 'Jack' }
+          ]}
+          onSelect={data => {
+            this.onPersonSelect(data);
+          }}
+        />
+      </View>
+    )
+  }
 
 }
 
-const styles={
-Container:{
-           justifyContent: 'center',
-           alignItems: 'center',
-           flex: 1,
-          },
- SelectBox:{
-                  marginLeft: wp('5%'),
-                  borderRadius: 5,
-                  borderWidth: 1,
-                  width: wp('90%'),
-                  height: hp('8%'),
-                  padding: 5,
-                  marginTop: hp('3%'),
-                  marginBottom: hp('3%'),
-                }
+const styles = {
+  Container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1,
+    flex: 1,
+  },
+  SelectBox: {
+    borderRadius: 5,
+    borderWidth: 1,
+    width: '90%',
+    height: '40%',
+    padding: 5,
+    marginTop: '3%',
+    marginLeft:'5%',
+    marginBottom: '3%',
+  }
 }
 
 ```
